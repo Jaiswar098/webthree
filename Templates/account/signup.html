@@ -7,7 +7,7 @@
     <div class="row justify-content-center align-items-center" style="height: 90vh;">
         <div class="col-md-4 my-5 card p-5">
             <form class="signup card-body" method="POST" action="{% url 'account_signup' %}">
-                <h1> Sign Up </h1><br>
+                <h1> Sign Up </h1><br> 
                 {% csrf_token %}
                 {% bootstrap_form form layout='floating' %}
                 {% if redirect_field_value %}
